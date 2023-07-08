@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--Very-dark-blue);
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+
+.card__image-container img:not(:nth-child(1)) {
+    display: none;
+}
+
+main {
+    width: 90%;
+    max-height: 820px;
+    max-width: 500px;
+    background-color: var(--Dark-desaturated-blue);
+    text-align: center;
+}
+
+.card__conten {
+    padding: 2rem;
+}
+
+
+
+.card__image-container {
+    max-width: 90%;
+    margin: 25% 8% 0;
+    text-align: center;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    margin: 0 0 1.25rem;
+    font-size: 27px;
+    color: white;
+    font-weight: 700;
+}
+
+h1 span {
+    color: var(--Soft-violet);
+}
+
+h2 {
+    color: white;
+}
+
+
+p {
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-style: 400;
+    font-family: 'Lexend Deca';
+    color: rgba(254, 254, 254, 0.5);
+}
+
+.section__bottom {
+    margin-top: 10%;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .card__image-container img:not(:nth-child(1)) {
+        display: block;
+    }
+
+    .card__image-container img:not(:nth-child(2)) {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1300px;
+        text-align: start;
+    }
+
+    .card__bottom {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .card__image-container {
+        max-width: 50%;
+        margin: 0;
+    }
+
+    .card__conten {
+        max-width: 50%;
+        align-self: center;
+        padding: 7%;
+
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .section__bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+.section__bottom{
+    font-size: 20px;
+}
+
+
+}
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
